@@ -1,0 +1,1146 @@
+/* Joel Reed | e-Learning Developer | Shropshire, UK
+   © 2016
+   www.joelreed.co.uk
+------------------------------------------*/
+
+ /* Regular Styles
+------------------------------------------*/
+.container-fluid{margin:0;padding:0;}
+html,body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+html {overflow-y: scroll;}
+
+/* Headings
+------------------------------------------*/
+
+h1 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color:#423a38;
+    font-weight:bold;
+    line-height: 70%;
+    font-size: 5em;
+    font-weight: 900;
+    
+}
+h2 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color:#58514f;
+    font-weight:bold;
+    line-height: 35%;
+    font-size: 3em;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+h3 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color:#ebe5c8;
+    font-weight:bold;
+    line-height: 135%;
+    font-size: 2.5em; 
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+h4 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight:bold;
+    font-size: 1.3em; 
+    text-align: center;
+    font-weight: 900;
+}
+h5 {
+
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight:bold;
+    font-size: 1em; 
+    font-weight: 900;
+}
+h6 {
+
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 0.7em; 
+    font-weight: 900;
+    line-height: 145%;
+}
+
+/* Colour Classes
+------------------------------------------*/
+/* Home page specifics
+------------------------------------------*/
+.home, .home-bg {
+  background-image: url(../images/home/home-bg.jpg);
+  background-repeat: repeat;
+}
+.location {
+  color: #797472; /*Prev #dc493c*/
+}
+/* Work page specifics (Note: Background image noise is 0.8 in Adobe Photoshop)
+------------------------------------------*/
+.work, .about h2,.contact h2,.contact h2 {
+  color:#ebe5c8;
+}
+.work, .work-bg {
+  background-image: url('../img/work-bg.jpg');
+  background-repeat: repeat;
+}
+.work a:link, .work a:visited {
+  color:#93d6c5;
+}
+.work a:hover {
+  text-decoration: none;
+  color:#c8f8ed;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.work h3 {
+  font-size: 2em;
+}
+.work h4 {
+  padding-bottom: 1px;
+}
+.work h6 {
+  color:#a0cec1;
+  text-align: center;
+}
+.sub-portfolio-title h4 {
+  margin-top:-24px;
+}
+.responsiveImg {
+  width: 800px;
+  text-align: center;
+  margin-bottom:29px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lowerImg {
+  margin-top:34px;
+}
+.edImg {
+  border: 1px solid #ebe5c8;
+}
+p.tile-warning {
+  padding-top: 12px;
+  text-align: center;
+}
+
+/* About page specifics
+------------------------------------------*/
+.about,.about-bg {
+  background-image: url(../images/about/about-bg.jpg);
+  background-repeat: repeat;
+}
+.about a:link, .about a:visited {
+  color:#e3b4e1;
+}
+.about a:hover {
+  text-decoration: none;
+  color:#F6DEF5;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* About rounded avatar image */ 
+.profile {
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #e3b4e1;
+  display: block;
+  margin: 27px auto;
+}
+
+/* Contact page specifics
+------------------------------------------*/
+.contact,.contact-bg {
+  background-image: url(../images/contact/contact-bg.jpg);
+  background-repeat: repeat;
+}
+.contact a:link, .contact a:visited {
+  color:#ed9d84;
+}
+.contact a:hover {
+  text-decoration: none;
+  color:#FFC6BF;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+   
+/* Main Wrapper
+------------------------------------------*/
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+/* Header - Containing SVG JR Logo, Nav (Hamburger Menu)
+------------------------------------------*/
+
+header {
+  width: 100%;
+  height:105px;
+  background-color: #423b38;
+  color: #ebe5c8;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  position:relative;
+  border-bottom: 2px solid #C7C095;
+  font-weight: 900;
+}
+.header-logo {
+  height: 100%;
+  width:100%;
+  display:block;
+  text-align: center;
+  position: relative;
+  float: left;
+  margin:auto;
+  margin-bottom: 1px solid white;
+}
+.header-logo img {
+  height:85%;
+  padding-top:8px;
+  border: none;
+}
+
+/* Navigation Hamburger Button Holder and MENU text alongside (for desktop/tablet)
+------------------------------------------*/
+
+.header-menu {
+  width:79px;
+  height:100%;
+  background-color: #544c48;
+  right:0;
+  position: absolute;
+  float:right;
+
+}
+.header-menu-instructions {
+  right:90px;
+  position: absolute;
+  float:right;
+  color:#ebe5c8;
+  text-align: right;
+  padding-top: 42px
+}
+
+ /* Navigation Hamburger Menu Button - Create
+------------------------------------------*/
+
+ /* Shoutout to Nick Salloum (http://callmenick.com/) 
+ for his experimental work in this area.*/
+
+.menu-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 79px;
+  height: 105px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+}
+
+.menu-hamburger:hover {
+  background:#655e5b;
+}
+
+.menu-hamburger:focus {
+  outline: none;
+}
+
+.menu-hamburger span {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 24px;
+  right: 24px;
+  height: 4px;
+  background: #e0e1c4;
+}
+
+.menu-hamburger span::before,
+.menu-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #e0e1c4;
+  content: "";
+}
+
+.menu-hamburger span::before {
+  top: -8px;
+}
+
+.menu-hamburger span::after {
+  bottom: -8px;
+}
+
+/* Hamburger Menu Transitions/Hover Effects */
+
+.menu-hamburger--htx {
+  background-color: #544c48;
+}
+
+.menu-hamburger--htx span {
+  transition: background 0s 0.2s;
+ -webkit-transition: background 0s 0.2s;
+}
+
+.menu-hamburger--htx span::before,
+.menu-hamburger--htx span::after {
+  transition-duration: 0.2s, 0.2s;
+  transition-delay: 0.2s, 0s;
+  -webkit-transition-duration: 0.2s, 0.2s;
+  -webkit-transition-delay: 0.2s, 0s;
+}
+
+.menu-hamburger--htx span::before {
+  transition-property: top, transform;
+  -webkit-transition-property: top, transform;
+}
+
+.menu-hamburger--htx span::after {
+  transition-property: bottom, transform;
+  -webkit-transition-property: bottom, transform;
+}
+
+/* Active Menu State, i.e. Menu Open */
+.menu-hamburger--htx.is-active {
+  background-color: #655e5b;
+}
+
+.menu-hamburger--htx.is-active span {
+  background: none;
+}
+
+.menu-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.menu-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.menu-hamburger--htx.is-active span::before,
+.menu-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.2s;
+  -webkit-transition-delay: 0s, 0.2s;
+}
+
+/* Navigation Pop-Out Menu
+------------------------------------------*/
+
+nav {
+  position: fixed;
+  opacity:0.98;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=98)";
+  filter: alpha(opacity=98);
+  background-color: #ebe5c8;
+  z-index: 2;
+  width:100%;
+  height:calc(100% - 107px);
+  top:107px;
+  display: none;
+}
+
+nav ul li {
+  color: #ebe5c8;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4em;
+  height:25vh;
+  line-height: 25vh;
+  font-weight: 900;
+}
+nav ul {
+  padding-left: 0;
+  padding-right: 0;
+  list-style-type: none;
+}
+nav a:link {
+  color:white;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+nav a:visited {
+  color:white;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.nav-overflow {
+    overflow:hidden;
+}
+
+/* Tri-Multicoloured Navigational Panels
+------------------------------------------*/
+
+ .trabalhoNav {
+  background-color: #5d9d8d;
+  margin-top:-16px;
+  background-image: url(../images/nav/nav-work-2.png);
+  background-repeat: no-repeat;
+  background-position:right center;
+  background-size:contain;
+ }
+ .trabalhoNav a:hover {
+  color: #C3E0D8;
+  text-decoration: none;
+ }
+  .sobreNav {
+  background-color: #7d5e7d;
+  background-image: url(../images/nav/nav-about-2.png);
+  background-repeat: no-repeat;
+  background-position:right center;
+  background-size:contain;
+ }
+ .sobreNav a:hover {
+  color: #bea4bd;
+  text-decoration: none;
+ }
+  .contatoNav {
+  background-color: #da552c;
+  background-image: url(../images/nav/nav-contact-2.png);
+  background-repeat: no-repeat;
+  background-position:right center;
+  background-size:contain;
+  border-bottom: 2px solid #C7C095;
+ }
+ .contatoNav a:hover {
+  color: #FFA284;
+  text-decoration: none;
+ }
+
+ /* Home (Tabular Centralised) Content
+------------------------------------------*/
+#contentHome {
+  padding-bottom:110px; /* Height of the footer element - Relates to Sticky Footer */
+  display:table;
+  width:100%;
+  height:69vh;
+}
+.containerHome {
+  max-width: 960px;
+  margin:auto;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+
+  /* Fade in name, job title and location */
+  -webkit-animation: fadein 2s;/*originally 1.5s*/
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s; 
+  -o-animation: fadein 2s; 
+  animation: fadein 2s;
+}
+
+/* Work/About/Contact Content and Containers
+------------------------------------------*/
+#content {
+  padding-bottom:78px; /* Height of the footer element to ensure no overlap - Relates to Sticky Footer */
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s; 
+  -o-animation: fadein 2s; 
+  animation: fadein 2s;
+}
+#content p {
+  color:#fff;
+  font-size:1em;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  line-height:135%;
+  font-weight: 400;
+}
+#content h2 {
+  color:#ebe5c8;
+  font-size: 3.5em;
+}
+.container {
+  padding:30px 30px 30px 30px;
+  max-width: 960px;
+  margin:0 auto;
+}
+.sub-container /* e.g. Toolbox on About */ {
+  max-width: 960px;
+  margin:0 auto;
+  padding:0px 30px 0px 30px;
+}
+/* Work container - slightly different */
+.containerWork {
+  padding:30px 30px 60px 30px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* Three navagational icons on the Home page (work, about contact) */
+.home-container {
+  max-width: 450px;
+  margin:auto;
+  padding:40px 0px 0px 0px;
+}
+.home-container img {
+  height:71px;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+}
+.no-touch .home-container img:hover {
+  transform: scale(1.2);
+}
+.home-icon {
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+
+  -webkit-animation: bounce 1.5s 0.5s; /* Chrome, Safari, Opera */
+  animation: bounce 1.5s 0.5s;
+  -moz-animation: bounce 1.5s 0.5s;
+  -ms-animation: bounce 1.5s 0.5s; 
+  -o-animation: bounce 1.5s 0.5s; 
+
+  border: none;
+}
+.no-touch .home-icon:hover {
+  opacity:0.7;
+}
+/* Three navagational icons (left, right and grid) on the Work subpages */
+
+.work-container {
+  max-width: 300px;
+  margin:0 auto;
+  padding:10px 0px 25px 0px;
+}
+.work-container img {
+  height:40px;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+}
+.no-touch .work-container img:hover {
+  transform: scale(1.2);
+}
+.work-icon {
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+
+  -webkit-animation: bounce 1.5s 0.5s; /* Chrome, Safari, Opera */
+  animation: bounce 1.5s 0.5s;
+  -moz-animation: bounce 1.5s 0.5s;
+  -ms-animation: bounce 1.5s 0.5s; 
+  -o-animation: bounce 1.5s 0.5s; 
+
+  border: none;
+}
+.no-touch .work-icon:hover {
+  opacity:0.7;
+}
+/* Additional spacing added between div and footer for the final grid content block (e.g. used in Experience on the About page) */ 
+.bottom-container {
+  margin-bottom:40px;
+}
+.border {
+    border-bottom: none;
+}
+/* HEADER/TITULOS */ 
+.header-work {
+  width:100%;
+  position: relative;
+  background-image: url("../img/work00WHITE.png");
+  background-size: 64px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display:inline-block;
+  border-bottom: 1px solid #ebe5c8;
+  text-align: center;
+  margin-bottom:15px;
+  padding: 30px;
+}
+
+.header-about {
+  width:100%;
+  position: relative;
+  background-image: url(../images/about/about-icon.svg);
+  background-size: 62px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display:inline-block;
+  border-bottom: 1px solid #ebe5c8;
+  text-align: center;
+  margin-bottom:15px;
+}
+.header-contact {
+  width:100%;
+  position: relative;
+  background-image: url("img/msg.png");
+  background-size: 62px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display:inline-block;
+  border-bottom: 1px solid #ebe5c8;
+  text-align: center;
+  margin-bottom:20px;
+}
+
+/* Responsive Grids 
+   
+   Toolbox graphics on About: SVGs were provided by the kind folks @ World Vector Logo (https://worldvectorlogo.com/)
+   Skillset graphics on About: SVGs were provided by the legends over @ Flaticon.com (Thanks Freepik - http://www.freepik.com | Madebyoliver - http://www.flaticon.com/authors/madebyoliver | Daniel Bruce - http://www.danielbruce.se | CC BY);
+   Experience graphics on About: SVGs are copyright of their respective Universities
+
+*/
+.itemContainer33:after,.itemWorkContainer33:after { /*33.3% width cells*/
+  content: "";
+  display: table;
+  clear: both;
+}
+.itemContainer33 > div,.itemWorkContainer33 > div {
+  float: left;
+  width: 33.3%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 2%;
+}
+/*Work Cells*/
+
+.work .itemContainer33 h4 {
+  color: #ebe5c8;
+}
+.work .itemContainer33 h5 {
+  margin-top: -20px;
+}
+/*Work (landing) grid images and effects*/
+.gridImg .img-reponsive{
+  width: 280px;
+  height:350px;
+  margin: 0 auto;
+  border: 1px solid #ebe5c8;
+}
+.gridImg img {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border:none;
+}
+.no-touch .gridImg img:hover {
+  opacity:0;
+}
+.textTititulo{
+	margin-bottom: 30px;
+}
+/*Work grid rollover effects (opaque with JR logo)*/
+.ed {
+  background-image: url(../images/work/grid-ed-280-roll.png);
+  background-repeat: no-repeat;
+}
+.ms {
+  background-image: url("../img/work00WHITE.png");
+  background-repeat: no-repeat;
+}
+.gm {
+  background-image: url(../images/work/grid-gm-280-roll.png);
+  background-repeat: no-repeat;
+}
+
+/*About cells - Grid etc.*/
+.itemContainer50:after { /*50% width cells*/
+  content: "";
+  display: table;
+  clear: both;
+}
+.itemContainer50 > div {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 4%;
+}
+.column-left-50 {
+  text-align: center;
+  padding-top:28px;
+}
+.column-left-50 img {
+  vertical-align: middle;
+}
+.column-right-50, .column-right-50 h4 {
+  text-align: left;
+}
+.about-bg .column-right-50 h4 {
+  line-height:130%;
+}
+.about-bg .column-right-50 h5 {
+  line-height:110%;
+}
+.about-bg .column-right-50 h5 {
+  color:#e3b4e1;
+}
+/* 404 Error page */
+.error-404 {
+  color:#dc493c;
+}
+.error-404:hover {
+  text-decoration: none;
+  color:#F66E63;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.broke-link {
+ padding-bottom:15px;
+}
+
+/* Mobile Elements - Which only appear in Smartphone view - i.e. Twitter Icon and Return to Top Icon replace the usual footer */
+
+.twitter-mobile {
+  position: relative;
+  vertical-align: middle;
+  font-size: 3em;
+  text-align: center;
+  display: none;
+ }
+.home .twitter-mobile a:link, .twitter-mobile a:visited {
+  color: #655e5b;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.home .twitter-mobile a:hover {
+  color: #938A87;
+}
+.work .twitter-mobile a:link, .work .twitter-mobile a:visited {
+  color: #93d6c5;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.work .twitter-mobile a:hover {
+  color: #c8f8ed;
+}
+.about .twitter-mobile a:link, .about .twitter-mobile a:visited {
+  color: #e3b4e1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.about .twitter-mobile a:hover {
+  color: #F6DEF5;
+}
+.contact .twitter-mobile a:link, .contact .twitter-mobile a:visited {
+  color: #ed9d84; 
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.contact .twitter-mobile a:hover {
+  color: #FFC6BF;
+}
+/* Up Icon - This SVG is courtesy of http://www.flaticon.com/free-icon/arrow-up_9946 - Many thanks for your hard work - CC BY*/
+.up-mobile {
+  position: relative;
+  text-align: center;
+  display: none;
+  margin-bottom:4%;
+}
+.up-desktop {
+  position: relative;
+  text-align: center;
+  display: block;
+  margin-bottom:4%;
+}
+.up-mobile img, .up-desktop img {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.no-touch .up-mobile img:hover, .no-touch .up-desktop img:hover {
+  opacity:0.7;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+}
+/* Mobile Copyright Disclaimer */
+.reserved-mobile {
+  position: relative;
+  vertical-align: middle;
+  font-size: 1em;
+  text-align: center;
+  display: none;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  padding-top:20px;
+  font-weight: 400;
+ }
+ /* Make the disclaimer text grey on the home page instead of white */
+ .reserved-index {
+  color:#655e5b;
+ }
+/* Footer, Disclaimers, Twitter Icon Link etc.
+------------------------------------------*/
+footer {
+  width: 100%;
+  height:78px;
+  background-color: #423b38;
+  border-top: 2px solid #C7C095;
+  color: #ebe5c8;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size:1em;
+  text-transform: uppercase;
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  overflow:hidden;
+  font-weight: 900;
+}
+.footer-container {
+  height: 100%;
+  display:block;
+}
+.footer-image {
+  position: relative;
+  float:left;
+  margin-left:1.5%;
+  height:100%;
+}
+.footer-image img {
+  width: 50px;
+  height:50px;
+  padding-top:14px;
+  border: none;
+}
+.footer-text {
+  float:left;
+  margin-left:1.5%;
+  padding-top:13px;
+  height:100%;
+  vertical-align: middle;
+  position: relative;
+}
+.footer-twitter {
+  float:right;
+  padding: 15px 20px 0px 20px;
+  height:100%;
+  vertical-align: middle;
+  position: relative;
+  font-size: 2.5em;
+}
+.footer-twitter a:link, .footer-twitter a:visited {
+  color: #ebe5c8;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.footer-twitter a:hover {
+  color: white;
+}
+
+/* Select Text CSS3 - Gold
+------------------------------------------*/
+
+::-moz-selection {
+  background:rgba(199, 192, 149, 0.99);
+  color:#ffffff;
+}
+::-webkit-selection {
+  background:rgba(199, 192, 149, 0.99);
+  color:#ffffff;
+}
+::selection {
+  background:rgba(199, 192, 149, 0.99);
+  color:#ffffff;
+}
+
+/* Responsive and Mobile Breakpoints
+------------------------------------------*/
+
+@media (max-width:960px){ /* Relates to Work section - Row becomes 2*/
+    .work .itemContainer33 > div { 
+        float: left;
+        width:50%;
+    }
+}
+
+@media (max-width:860px){ /* Relates to the screenshots used in the Work sub-sections, e.g. Meat Science or Experimental Design*/
+    .responsiveImg {
+        width:100%;
+    }
+}
+@media (max-width:660px){ /* Relates to the Work grid section - Row becomes 1*/
+    .work .itemContainer33 > div {
+        float: none;
+        width:100%;
+    }
+}
+
+@media (max-width:630px){/* Breakpoint here was previously 590px */
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+        line-height: 100%;
+    }
+    nav ul li {
+      font-size: 3em;
+
+    }
+    .about .itemContainer33 > div, .about .itemContainer50 > div {
+        float: none;
+        width: 100%;
+    }
+    .about .itemContainer50 > div {
+      margin-bottom: 10%;
+    }
+    .broke-link {
+      padding-bottom:0px;
+  }
+    p.tile-warning {
+    padding-top: 0px;
+   }
+  .home-container img {
+      height:61px;
+    }
+
+}
+
+@media (max-width:420px){ /* Smartphone View */
+
+    h1, h2 {
+
+        line-height: 125%;
+    }
+    .home-bg header, .work-bg header, .about-bg header, .contact-bg header {
+      position: fixed;
+      z-index: 3;
+    }
+    .home-bg nav, .work-bg nav, .about-bg nav, .contact-bg nav {
+      position: fixed;
+    }
+    footer {
+      display:none;
+    }
+    #content {
+      padding-bottom:30px;
+    }
+    #contentHome {
+      padding-bottom:30px;
+      height:80vh;
+      padding-top:110px;
+    }
+    .containerWork {
+      padding-top:110px;
+      padding-bottom:30px;
+      padding-left:15px;
+      padding-right:15px;
+    }
+    #content h2 {
+      font-size:3em;
+      text-decoration: underline;
+      text-align: center;
+    }
+    .container {
+      padding: 110px 30px 0px 30px;
+    }
+    .header-work,.header-about,.header-contact {
+      padding-bottom:40px;
+      border: none;
+      background-position: center bottom;
+    }
+    .about-bg .column-left-50 {
+      padding-top:0px;
+    }
+    .column-right-50 h4,.column-right-50 h5 {
+      text-align: center;
+    }
+    .twitter-mobile,.up-mobile,.reserved-mobile {
+      display:block;
+    }
+    .header-menu-instructions {
+      display: none;
+    }
+    .border {
+      border-bottom: 1px solid #ebe5c8;
+    }
+    .sub-container /* e.g. Toolbox on About */ {
+      padding:0px 30px 20px 30px;
+    }
+    .home-container {
+      margin-bottom: 27px;
+      padding: 20px 0px 0px 0px;
+    }
+    .bottom-container {
+      margin-bottom:0px;
+    }
+    .sub-portfolio-title h4 {
+      margin-top:0px;
+    }
+    .edImg {
+      border: none;
+   }
+    
+}
+/*------------------------------------------*/
+
+/* Keyframe animation to introduce coloured fade-in page transitions - Special thanks to Kasper Mikiewicz (https://kasper.io/) for showing me the way */
+
+.animate-in-home {
+  animation: fadeIn 0.5s ease-in;
+  background-color: #ebe5c8;
+  /* background-image: url("../img/wallpaper00.png"); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* -webkit-animation: fadeIn 1s ease-in; */
+  /* -moz-animation: fadeIn 1s ease-in;
+  -o-animation: fadeIn 1s ease-in; */
+}
+.animate-in-work {
+  -webkit-animation: fadeIn 1s ease-in;
+  animation: fadeIn 1s ease-in;
+  -moz-animation: fadeIn 1s ease-in;
+  -o-animation: fadeIn 1s ease-in;
+  background-color: #5d9d8d;
+  background-image: url(../images/nav/watermark.png);
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+.animate-in-about {
+  -webkit-animation: fadeIn 1s ease-in;
+  animation: fadeIn 1s ease-in;
+  -moz-animation: fadeIn 1s ease-in;
+  -o-animation: fadeIn 1s ease-in;
+  background-color: #815c7b;
+  background-image: url(../images/nav/watermark.png);
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+.animate-in-contact {
+  -webkit-animation: fadeIn 1s ease-in;
+  animation: fadeIn 1s ease-in;
+  -moz-animation: fadeIn 1s ease-in;
+  -o-animation: fadeIn 1s ease-in;
+  background-color: #da552c;
+  background-image: url(../images/nav/watermark.png);
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+
+.animate-out {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Keyframe Animation to fade in the page content (after coloured page transition) */
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    60% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    0% { opacity: 0; }
+    60% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    60% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    0% { opacity: 0; }
+    60% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    0% { opacity: 0; }
+    60% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Bounce our three icons in on the home page (after a delay triggered earlier) */
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
