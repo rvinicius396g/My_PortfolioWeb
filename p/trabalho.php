@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
+		<!-- Google Analystic -->
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-81743207-2', 'auto');
+			  ga('send', 'pageview');
+
+			</script>
+		<!--  -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,13 +42,13 @@
 				</div> -->
 				<!-- <div class="header-menu-instructions">Menu</div> -->
 			</header>
-			<nav>
+			<!-- <nav>
 				<ul>
 					<li class="trabalhoNav"><a href="p/trabalho.php"></a></li>
 					<li class="sobreNav"><<a href="p/trabalho.php"></a>/li>
 					<li class="contatoNav"><a href="p/trabalho.php"></a></li>
 				</ul>
-			</nav>
+			</nav> -->
 			<div id="content" class="work"><!-- #content -->
 			<div class="containerWork"><!-- #container -->
 				<div class="header-work"><h2>Trabalho</h2></div>
@@ -68,15 +80,15 @@
 					</div> -->
 
 			</div><!-- #container -->
-				<div class="up-mobile">
+				<!-- <div class="up-mobile">
             			<img src="assets/images/work/arrow-up.svg" class="up" width="40" alt="Up Arrow" onclick="goTop();">
             	</div>
-
+ -->
 				<div class="twitter-mobile">
-            			<a href="https://www.twitter.com/JoelReed_"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            			<a href="https://www.twitter.com/rvinicius396g"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             	</div>
             	<div class="reserved-mobile">
-            			<p>&copy; 2016 - Joel Reed</p>
+            			<p>&copy; 2016 - Roberto Vinicius</p>
             	</div>
 
 		</div><!-- #content -->

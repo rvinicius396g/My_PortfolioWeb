@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
+		<!-- Google Analystic -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-81743207-2', 'auto');
+		  ga('send', 'pageview');
+		</script>
+		<!--  -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +25,12 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- BootStrap CSS Custom -->
 		<link rel="stylesheet" href="style/custom.css"/>
+		<!-- Initiate Tooltip to work -->
+		<script>
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();
+		});
+		</script>
 	</head>
 	<body class="animate-in-home">
 	<div id="wrapper">
@@ -34,7 +50,7 @@
 				<ul>
 					<li class="trabalhoNav"><a href="p/trabalho.php"></a></li>
 					<li class="sobreNav"><<a href="p/trabalho.php"></a>/li>
-					<li class="contatoNav"><a href="p/trabalho.php"></a></li>
+					<li class="contatoNav"><a  href="p/trabalho.php"></a></li>
 				</ul>
 			</nav>
 			<div id="contentHome" class="home">
@@ -46,13 +62,13 @@
 					<div class="home-container"><!--Icones-->
 						<div class="itemContainer33">
 							<div class="column-left">
-								<a href="p/trabalho.php"><img src="img/work00.png" alt="Meus trabalhos produsidos" class="home-icon"></a>
+								<a data-toggle="tooltip" title="Meus Trabalhos" data-placement="bottom" href="p/trabalho.php"><img src="img/work00.png" alt="Meus trabalhos!" class="home-icon"></a>
 							</div>
 							<div class="column-center">
-								<a href="p/sobre.php"><img src="img/sobre.png" alt="Sobre mim" class="home-icon"></a>
+								<a data-toggle="tooltip" title="Saiba mais sobre mim!" data-placement="bottom" href="p/sobre.php"><img src="img/sobre.png" alt="Sobre mim!" class="home-icon"></a>
 							</div>
 							<div class="column-right">
-								<a href="p/contato.php"><img src="img/msg.png" alt="Entre em Contato" class="home-icon"></a>
+								<a data-toggle="tooltip" title="Entre em Contato" data-placement="bottom" href="p/contato.php"><img src="img/msg.png" alt="Entre em Contato!" class="home-icon"></a>
 							</div>
 						</div>
 					</div><!--Icones -->
@@ -60,7 +76,7 @@
             			<a href="https://www.twitter.com/rvinicius396g"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             		</div>
             		<div class="reserved-mobile reserved-index">
-		            	<p>&copy; 2016 - Joel Reed</p>
+		            	<p>&copy; 2016 - Roberto Vinicius</p>
 		           </div>
 				</div> <!--containerHome-->
 			</div><!--contentHome-->

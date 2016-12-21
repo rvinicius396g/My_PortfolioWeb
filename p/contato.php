@@ -2,7 +2,16 @@
 <html lang="en">
 
 <head>
-
+	<!-- Google Analystic -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-81743207-2', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	<!--  -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,11 +27,6 @@
 	<script type="text/javascript" src="assets/js/functionality.js"></script>
 	<script type="text/javascript" src="assets/js/app.js"></script>
 	<!-- js/jq -->
-
-	<!-- google analytics -->
-
-	<!-- google analytics -->
-
 	<!-- fonts -->
 	<!-- Lato Font is Copyright (c) 2010-2014, Łukasz Dziedzic (dziedzic@typoland.com) -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">

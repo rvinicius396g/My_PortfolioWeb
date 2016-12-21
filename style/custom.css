@@ -1,8 +1,14 @@
-/* Joel Reed | e-Learning Developer | Shropshire, UK
-   © 2016
-   www.joelreed.co.uk
+/* Roberto Vinicius da Silva
+   © 2016 - @#@
+   SKype: robertoviniciusdasilva ou roberto396g@hotmail.com;
 ------------------------------------------*/
-
+/* Tootip ..
+------------------------------------------*/
+/* ''   '' bottom */
+.test + .tooltip.bottom > .tooltip-arrow {
+    border-bottom: 5px solid blue;
+    margin-top: 1000px;
+}
  /* Regular Styles
 ------------------------------------------*/
 .container-fluid{margin:0;padding:0;}
