@@ -36,6 +36,9 @@
 	<link rel="stylesheet" href="../style/style.css">
 	<link rel="stylesheet" href="../style/contact-form.css">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- GOOGLE CAPTCHA -->
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 
 <body class="animate-in-contact">
@@ -99,33 +102,44 @@
 							<input type="text" name="honeypot" id="honeypot" />
 						</div>
     					<fieldset>
+    					 <div class="g-recaptcha" data-sitekey="6Le_3A8UAAAAAO_MwEpZI0msS78crtW2I2BrNldX"></div>
       						<button name="submit" type="submit" id="submit" data-submit="...Sending">ENVIAR</button>
     					</fieldset>
     					<div id="returnmessage"></div>
   						</form>
   							<?php
-  								if (isset($_POST['submit'])) {
-  								# code...  								
-								require 'PHPMailer-master/PHPMailerAutoload.php';
-								$mail = new PHPMailer;
-								$mail->isSMTP();
-								$mail->SMTPSecure = 'ssl';
-								$mail->SMTPAuth = true;
-								$mail->Host = 'smtp.gmail.com';
-								$mail->Port = 465;
-								$mail->Username = 'vinicius396g@gmai.com';
-								$mail->Password = '211297robesilva';
-								$mail->setFrom('vinicius396g@gmai.com');
-								$mail->addAddress('recipients@email-address.com');
-								$mail->Subject = 'Meu portfolio';
-								$mail->Body = $_POST['message']."Enviada por: ".$_POST['name']."\n Mail: ".$_POST['email'];
-								//send the message, check for errors
-								if (!$mail->send()) {
-								    echo "ERROR: " . $mail->ErrorInfo;
-								} else {
-								    echo "SUCCESS";
+  								if (isset($_POST['submit']) || isset($_POST['g-recaptcha-response'])&& $_POST['g-recaptcha-response']) {
+  								  $secret = "6Le_3A8UAAAAAKlFkpR3FA-TQ7DzwncXYgazUpCD";         
+  								  $ip = $_SERVER['REMOTE_ADDR'];
+  								  $captcha = $_POST['g-recaptcha-response'];
+  								  $rsp  = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha&remoteip$ip");
+  								 // var_dump($rsp);
+  								  $arr = json_decode($rsp,TRUE);
+  								  if($arr['success']){
+		  								  # code...  								
+										require 'PHPMailer-master/PHPMailerAutoload.php';
+										$mail = new PHPMailer;
+										$mail->isSMTP();
+										$mail->SMTPSecure = 'ssl';
+										$mail->SMTPAuth = true;
+										$mail->Host = 'smtp.gmail.com';
+										$mail->Port = 587;
+										$mail->Username = 'vinicius396g@gmai.com';
+										$mail->Password = '211297robesilva';
+										$mail->setFrom('vinicius396g@gmai.com');
+										$mail->addAddress('recipients@email-address.com');
+										$mail->Subject = 'Meu portfolio';
+										$mail->Body = $_POST['message']."Enviada por: ".$_POST['name']."\n Mail: ".$_POST['email'];
+										//send the message, check for errors
+										if (!$mail->send()) {
+										    echo "ERROR: " . $mail->ErrorInfo;
+										} else {
+										    echo "SUCCESS";
+										}
+									}
 								}
-							}
+
+  								
 							?>
 
 				</div><!-- #form -->
