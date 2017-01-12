@@ -843,12 +843,13 @@ footer {
   border: none;
 }
 .footer-text {
-  float:left;
+  /* float:left; */
   margin-left:1.5%;
   padding-top:13px;
   height:100%;
   vertical-align: middle;
   position: relative;
+  text-align: center;
 }
 .footer-twitter {
   float:right;

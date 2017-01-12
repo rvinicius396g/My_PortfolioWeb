@@ -858,7 +858,8 @@ footer {
   border: none;
 }
 .footer-text {
-  float:left;
+  /* float:left; */
+  text-align: center;
   margin-left:1.5%;
   padding-top:13px;
   height:100%;
